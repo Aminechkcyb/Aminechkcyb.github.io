@@ -1,0 +1,365 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+:root {
+  --bg-color: #171717;
+  --second-bg-color: #212121;
+  --text-color: #ededed;
+  --main-color: #949494;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+
+}
+
+/* Utilisez position: sticky pour que la navbar reste en haut lors du défilement */
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #171717;
+  overflow: hidden;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding: 0 120px;
+  z-index: 1000;
+  /* Ajoutez ceci pour assurer que la navbar est au-dessus du contenu */
+}
+
+
+.navbar a {
+  display: block;
+  font-size: 110%;
+  overflow: hidden;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin-right: 60px;
+  margin-top: 15px;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+  border-radius: 30px;
+}
+
+
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.link {
+  color: #00A6ED;
+}
+
+section {
+  min-height: 100vh;
+  padding: 10rem 9% 2rem;
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  padding: 0 9%;
+}
+
+.home-content {
+  max-width: 60rem;
+}
+
+
+.home-content h1 {
+  font-size: 3.0rem;
+  font-weight: 700;
+  line-height: 1.3;
+  white-space: nowrap;
+  overflow: hidden;
+  opacity: 0;
+  animation:
+    typing 2s;
+  animation-delay: 600ms;
+  animation-fill-mode: forwards;
+
+}
+
+.home-content .text-animate {
+  position: relative;
+  width: 50.8rem;
+  white-space: nowrap;
+}
+
+.home-content .text-animate h3 {
+  font-size: 3.0rem;
+  font-weight: 700;
+  color: transparent;
+  -webkit-text-stroke: .7px var(--main-color);
+  overflow: hidden;
+  opacity: 0;
+  animation:
+    typing 2s;
+  animation-delay: 1000ms;
+  animation-fill-mode: forwards;
+
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+
+  to {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+.home-content p {
+  font-size: 1.0rem;
+  margin: 2rem 0 4rem;
+}
+
+/* Ajoutez ces règles de style pour le bouton */
+.cv-button {
+  background-color: #00A6ED;
+  /* Couleur de fond du bouton */
+  color: #fff;
+  /* Couleur du texte du bouton */
+  padding: 10px 20px;
+  /* Espacement intérieur du bouton */
+  font-size: 16px;
+  /* Taille de la police du texte */
+  border: none;
+  /* Supprime la bordure du bouton */
+  border-radius: 5px;
+  /* Ajoute des coins arrondis au bouton */
+  cursor: pointer;
+  /* Change le curseur en pointeur au survol du bouton */
+}
+
+
+.cv-button:hover {
+  background-color: #01BAEF;
+  /* Couleur de fond du bouton au survol */
+}
+
+
+.linkedin-logo {
+  margin-left: 30px;
+}
+
+.github-logo {
+  margin-left: 30px;
+}
+
+/* Styles for the about section */
+.about {
+  font-size: 2.0rem;
+  text-align: center;
+  padding: 50px 0;
+  /* Ajoutez un espace autour du contenu si nécessaire */
+  background-color: black;
+}
+
+.heading {
+  color: white;
+  /* Couleur du texte */
+  text-align: center;
+  font-size: 2.5rem;
+  /* Taille de la police */
+}
+
+.heading span {
+  color: #00A6ED;
+  /* Couleur du texte du span */
+}
+
+.search {
+  font-size: 2rem;
+
+}
+
+/* Styles for the text */
+p {
+  font-size: 17px;
+  /* Ajoutez la taille de police que vous préférez */
+  line-height: 1.5;
+  /* Espacement des lignes pour une meilleure lisibilité */
+  margin-bottom: 10px;
+  /* Espacement entre les paragraphes */
+}
+
+.date-highlight {
+  font-size: 20px;
+  color: #00A6ED;
+  font-weight: bold;
+  /* Texte en gras si nécessaire */
+}
+
+.bx-heart:before {
+  content: "\002665";
+  /* Code Unicode pour le cœur dans bx-heart */
+  color: #00A6ED;
+  /* Couleur du cœur (rouge dans cet exemple, ajustez selon vos préférences) */
+  font-size: 1.5em;
+  /* Taille de la police (ajustez selon vos besoins) */
+  margin-right: 5px;
+  /* Marge à droite pour l'espacement avec le texte */
+}
+
+
+/* Styles for the education section */
+.education {
+  background-color: #171717;
+  /* Couleur de fond de la section, ajustez selon vos préférences */
+  padding: 60px 0;
+}
+
+/* Styles for the education content */
+.education-content {
+  margin-bottom: 30px;
+  padding-right: 200px;
+  padding-left: 200px;
+}
+
+.education-content .content {
+  background-color: #000000;
+  /* Couleur de fond de la boîte de contenu, ajustez selon vos préférences */
+  padding: 50px;
+  border-radius: 50px;
+  /* Coins arrondis */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  /* Ombre légère */
+}
+
+.education-content .year {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #FFFF;
+  /* Couleur du texte pour l'année, ajustez selon vos préférences */
+}
+
+.education-content h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #00A6ED;
+  /* Couleur du texte pour le titre, ajustez selon vos préférences */
+}
+
+.education-content p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  color: white;
+  /* Couleur du texte pour le contenu, ajustez selon vos préférences */
+}
+
+.education-content p span {
+  font-weight: bold;
+  /* Texte en gras pour les éléments spécifiques, ajustez selon vos préférences */
+  color: #00A6ED;
+  /* Couleur du texte pour les éléments spécifiques, ajustez selon vos préférences */
+}
+
+.title {
+  font-size: 2.0rem;
+  margin-top: 45px;
+  margin-left: 15rem;
+}
+
+.skills {
+  background-color: black;
+}
+
+.heading-skills {
+  font-size: 1.3rem;
+  margin-top: 30px;
+  margin-left: 13rem;
+}
+
+/* Styles pour les cartes de compétences */
+.skills-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.skill-card {
+  width: 300px;
+  margin: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.skill-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.skill-description {
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+.skills-container {
+  display: flex;
+  overflow-x: auto;
+  transition: transform 0.5s ease-in-out;
+  justify-content: center;
+  /* Centre les cartes horizontalement */
+}
+
+.skill-card {
+  width: 300px;
+  margin: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Centre le contenu (image, titre, description) verticalement */
+}
+
+.skill-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.skill-description {
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+.skill-image {
+  max-width: 100%;
+  height: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  border-radius: 8px;
+}
+
+.skill-card:hover {
+  transform: scale(1.1);
+}
