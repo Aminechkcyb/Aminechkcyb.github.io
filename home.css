@@ -291,7 +291,8 @@ p {
 .heading-skills {
   font-size: 1.3rem;
   margin-top: 30px;
-  margin-left: 13rem;
+  text-align: center;
+
 }
 
 /* Styles pour les cartes de compétences */
@@ -302,7 +303,7 @@ p {
 }
 
 .skill-card {
-  width: 300px;
+  width: 200px;
   margin: 20px;
   padding: 15px;
   border: 1px solid #ddd;
@@ -325,11 +326,12 @@ p {
   overflow-x: auto;
   transition: transform 0.5s ease-in-out;
   justify-content: center;
+  margin-top: 20px;
   /* Centre les cartes horizontalement */
 }
 
 .skill-card {
-  width: 300px;
+  width: 200px;
   margin: 20px;
   padding: 15px;
   border: 1px solid #ddd;
@@ -353,6 +355,30 @@ p {
 }
 
 .skill-image {
+  max-width: 110%;
+  height: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  border-radius: 8px;
+}
+
+.skill-image-html {
+  max-width: 95%;
+  height: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  border-radius: 8px;
+}
+
+.skill-image-php {
+  max-width: 155%;
+  height: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  border-radius: 8px;
+}
+
+.skill-image-kalilinux{
   max-width: 100%;
   height: auto;
   margin-top: auto;
@@ -360,6 +386,13 @@ p {
   border-radius: 8px;
 }
 
+.skill-image-ubuntu{
+  max-width: 100%;
+  height: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  border-radius: 8px;
+}
 .skill-card:hover {
   transform: scale(1.1);
 }
