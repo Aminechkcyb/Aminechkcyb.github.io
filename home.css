@@ -231,9 +231,10 @@ p {
 
 /* Styles for the education content */
 .education-content {
-  margin-bottom: 30px;
-  padding-right: 200px;
-  padding-left: 200px;
+  margin-bottom: 50px;
+  padding-right: 80px;
+  padding-left: 80px;
+
 }
 
 .education-content .content {
@@ -398,7 +399,6 @@ p {
   background: #171717;
 }
 
-
 .cards-container {
   display: flex;
   justify-content: space-between;
@@ -448,4 +448,14 @@ p {
 .footer-section{
   background-color: black;
   padding: 60px 0;
+}
+
+.qrcode-link{
+  margin-top: 200px;
+}
+
+.footer-copyright{
+  font-size: 12px;
+  color: #fff;
+  padding: 20px;
 }
