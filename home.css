@@ -31,12 +31,12 @@ body {
   background-color: #171717;
   overflow: hidden;
   display: flex;
-  justify-content: right;
+  justify-content: center;
+  padding: 20px 0;
   align-items: center;
-  padding: 0,120px;
   z-index: 1000;
-  /* Ajoutez ceci pour assurer que la navbar est au-dessus du contenu */
 }
+
 
 
 .navbar a {
@@ -56,7 +56,6 @@ body {
   color: black;
   border-radius: 30px;
 }
-
 
 .navbar a:hover {
   background-color: #ddd;
