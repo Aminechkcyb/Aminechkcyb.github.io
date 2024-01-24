@@ -38,8 +38,6 @@ body {
   z-index: 1000;
 }
 
-
-
 .navbar a {
   display: block;
   font-size: 100%;
@@ -49,6 +47,21 @@ body {
   padding: 14px 16px;
   text-decoration: none;
   margin-top: 15px;
+}
+.navbar button{
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar button{
+    padding: 5px;
+    display: block;
+    background-color: transparent;
+    color: white;
+    font-size: 30px;
+    left: 20px;
+  }
+  
 }
 
 .navbar a:hover {
@@ -94,12 +107,6 @@ section:not(.footer-section){
 
 .home-content {
   margin-top: -120px;
-  
-}
-
-@media screen and (max-width: 768px) {
-  .home-content {
-  }
   
 }
 
