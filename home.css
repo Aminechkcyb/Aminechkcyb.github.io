@@ -90,7 +90,7 @@ body {
 }
 
 section:not(.footer-section){
-  min-height: 100vh;
+  min-height: 80vh;
   padding: 10rem 9% 2rem;
 }
 
@@ -102,7 +102,7 @@ section:not(.footer-section){
 
 .home {
   display: flex;
-  align-items: center;
+  align-items: center; 
 }
 
 .home-content {
@@ -226,7 +226,7 @@ section:not(.footer-section){
   color: white;
   text-align: center;
   font-size: 2.5rem;
-  margin-bottom:60px;
+  margin-bottom:50px;
 }
 
 .heading span {
@@ -469,10 +469,11 @@ p {
   justify-content: space-between;
   align-items: stretch;
   flex-wrap: wrap;
+  margin-left: 28px;
 }
 
 .card {
-  width: 300px;
+  width: 280px;
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
