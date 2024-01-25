@@ -466,7 +466,7 @@ p {
 
 .cards-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: stretch;
   flex-wrap: wrap;
   margin-left: 20px;
