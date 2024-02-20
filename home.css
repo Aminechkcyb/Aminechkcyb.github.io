@@ -519,11 +519,16 @@ p {
   color: #666;
 }
 
+.certif{
+  background-color: black;
+  padding: 60px 0;
+}
+
  footer {
   text-align: center;
 }
 .footer-section{
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.299);
   padding: 60px 0;
 }
 
