@@ -85,35 +85,6 @@ body {
   }
 }
 
-.railway {
-  width: 100%;
-  height: 50px;
-  background-color: #333;
-  position: relative;
-  overflow: hidden;
-}
-
-.train {
-  width: 400px; /* Largeur de votre image de train */
-  height: 50px; /* Hauteur de votre image de train */
-  background-image: url('img/train.png'); /* Remplacez 'chemin/vers/votre/image-de-train.png' par le chemin de votre image de train */
-  background-size: cover;
-  position: absolute;
-  bottom: -20;
-  left: -100px; /* Position initiale, hors de l'écran */
-  animation: trainMove 5s linear infinite; /* Ajustez la durée selon vos besoins */
-}
-
-@keyframes trainMove {
-  0% {
-    left: -100px; /* Début hors de l'écran */
-  }
-  100% {
-    left: 100%; /* Fin du déplacement à l'autre extrémité du conteneur .railway */
-  }
-}
-
-
 
 .link {
   color: #00A6ED;
